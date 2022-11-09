@@ -136,11 +136,14 @@ img:hover {
   width: 220px;
   height: 300px;
   border: 1px solid black; 
+  border-radius: 10px;
   display: flex;
   align-items: center;
 }
+
 .child{
-	
+	border-radius: 10px;
+	border: 1px solid black; 
 }
 
 #main div {
