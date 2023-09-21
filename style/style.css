@@ -20,6 +20,7 @@ body{
     height: 100vh;
 }
 
+<<<<<<< HEAD
 .header {
     height: 90px;
     border: 3px solid black;
@@ -66,6 +67,8 @@ body{
     padding-left: 150px;
 }
 
+=======
+>>>>>>> origin/master
 .begin{
 	height: 70px;
 	width: 100%;
