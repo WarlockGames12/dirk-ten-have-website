@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Player.png">
+    <title>Alien Abductors</title>
+    <style>
+        main {
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url("BackgroundItch.png");
+            background-size: cover;
+        }
+
+        .description {
+            width: 300px;
+            background-color: darkgray;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .glow {
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px aquamarine, 0 0 40px aquamarine, 0 0 50px aquamarine, 0 0 60px aquamarine, 0 0 70px aquamarine; to text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+
+        @media (max-width: 1024px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description, .links {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            canvas {
+                max-width: 100%;
+            }
+        }
+
+        canvas {
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: '04b 30';
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: 'Cooper';
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            font-family: 'Cooper';
+        }
+
+        h4 {
+            color: white;
+            font-family: 'Cooper';
+        }
+
+        .links {
+            width: 300px;
+            background-color: darkgray;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 0;
+            margin-left: auto;
+            margin-top: -740px;
+            justify-content: center;
+        }
+
+        .begin {
+            height: 70px;
+            width: 99%;
+            border-color: white;
+            border: 3px solid;
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: darkgray;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .footer {
+            height: 70px;
+            width: 99%;
+            border-color: black;
+            border: 3px solid;
+            position: fixed;
+            bottom: 0;
+            background-color: darkgray;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
+    <script src="SpecialEnemy.js"></script>
+    <script src="Ufo.js"></script>
+    <script src="bullet.js"></script>
+    <script src="enemybullet.js"></script>
+    <script src="star.js"></script>
+    <script src="sketch.js"></script>
+
+    <!--<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDpYHz8edaQ2M7un9QDJc6Ws8XSRJVRiv0",
+            authDomain: "alienabductors-6273d.firebaseapp.com",
+            projectId: "alienabductors-6273d",
+            storageBucket: "alienabductors-6273d.appspot.com",
+            messagingSenderId: "982821055513",
+            appId: "1:982821055513:web:4822652b9cc8bcc4c94e88",
+            measurementId: "G-HQWLG1LGM0"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        window.firebaseApp = app; // Make it globally available
+    </script> -->
+</head>
+
+<body>
+    <main>
+        <div class="begin" style=" background-color: darkgray; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+            <h1>Alien Abductors</h1>
+        </div>
+        <div class="description">
+            <h2 style="text-align:center;">Description: </h2>
+            <h4>-----------------------------------------------------------------</h4>
+            <h4>The Player needs to kill every row of enemies to progress in waves, try to get as much enemies before you eventually perish within the deep down dark void of space.</h4>
+            <h4>-----------------------------------------------------------------</h4>
+            <h4>This Game was created for an assignment from the school called: HVA, I hope you guys enjoy the game, and if there's an issue within the game itself, you can always notify me to let me know what kind of bug the game has.</h4>
+            <h4>-----------------------------------------------------------------</h4>
+            <h4>Credits:</h4>
+            <h4>Idea by: HVA</h4>
+            <h4>Programmer: Dirk ten Have</h4>
+            <h4>Art: Dirk ten Have</h4>
+            <h4>Sound Effects: SFXR</h4>
+            <h4>Music: David Renda</h4>
+            <h4>-----------------------------------------------------------------</h4>
+        </div>
+        <div class="links">
+            <h2>Links:</h2>
+            <a href="https://warlock-games-studios.itch.io">
+                <img style=" margin-left: auto; margin-right: auto; display: block; border-radius: 10px; height: 100px; width: 100px;" src="assets/Itch.png" />
+            </a>
+            <br />
+            <a href="https://www.youtube.com/@warlockgamesstudios">
+                <img style=" margin-left: auto; margin-right: auto; display: block; border-radius: 10px; height: 100px; width: 100px;" src="assets/YouTube.png" />
+            </a>
+            <br />
+            <a href="https://x.com/WarlockGames5">
+                <img style=" margin-left: auto; margin-right: auto; display: block; border-radius: 10px; height: 100px; width: 100px;" src="assets/Twitter.png" />
+            </a>
+            <br />
+            <a href="https://gamejolt.com/@WarlockGamesstudios">
+                <img style=" margin-left: auto; margin-right: auto; display: block; border-radius: 10px; height: 100px; width: 100px;" src="assets/images.png" />
+            </a>
+            <a href="https://discord.gg/ZRCDR83SUA">
+                <img style=" margin-left: auto; margin-right: auto; display: block; border-radius: 10px; height: 100px; width: 100px;" src="assets/Discord.png" />
+            </a>
+        </div>
+            <h4 style="margin-top: -18px; margin-left: 550px;">Volume:</h4>
+        <div class="footer" style=" background-color: darkgray; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+            <h3>Created by: Dirk ten Have (2018-2024)</h3>
+        </div>
+    </main>
+</body>
+
+</html>

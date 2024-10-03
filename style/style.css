@@ -84,19 +84,19 @@ body{
 
 
 .begin{
-	height: 70px;
-	width: 100%;
-	border-color: black;
-	border: 3px solid;
-	position: -webkit-sticky;
-	position: sticky;
-	background-color: lightslategray;
-	-webkit-background-size: cover;
+	 height: 70px;
+    width: 100%;
+    border-color: black;
+    border: 3px solid;
+    position: fixed; /* Changed from sticky to fixed */
+    top: 0; /* Added to fix it to the top */
+    background-color: lightslategray;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	border-radius: 10px;
-}
+    border-radius: 10px;
+    z-index: 1000; /* Added to ensure it stays above other content */
 
 .button {
 	box-shadow: 0px 0px 0px 0px #000000;
