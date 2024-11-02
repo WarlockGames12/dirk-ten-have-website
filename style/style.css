@@ -1,5 +1,4 @@
-﻿/* Importing font styles */
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Mate:ital@0;1&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Mate:ital@0;1&display=swap');
 
 body {
     font-family: 'Jersey 15', sans-serif;
@@ -8,15 +7,16 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Header styles */
-.header {
+.header 
+{
     background-color: #282c34;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
 
-.section-header {
+.section-header 
+{
     background: url("https://media.tenor.com/JTlJU1QmYAQAAAAM/cogs-gears.gif");
     color: #ffffff;
     text-align: center;
@@ -27,29 +27,33 @@ body {
 .logo {
     width: 60px;
     border-radius: 50%;
+    border-color: deepskyblue;
+    border: 2px solid;
     /*vertical-align: middle;*/
 }
 
-/* Navbar styling */
-.navbar {
+.navbar 
+{
     text-align: center;
     margin: 20px 0;
     line-height: 0.1;
 }
 
-    .navbar a {
-        color: #61dafb;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+.navbar a 
+{
+    color: #61dafb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .navbar a:hover {
-            color: #21a1f1;
-        }
+.navbar a:hover 
+{
+    color: #21a1f1;
+}
 
-/* Project cards section */
-.projects-section {
+.projects-section
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,9 +61,12 @@ body {
     background-color: #f5f5f5;
 }
 
-.project-card {
+.project-card 
+{
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 250px;
     margin: 15px;
@@ -67,42 +74,44 @@ body {
     overflow: hidden;
 }
 
-    .project-card img {
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
-        border-bottom: 2px solid #61dafb;
-    }
+.project-card img 
+{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid #61dafb;
+}
 
-    .project-card h5 {
-        padding: 10px 0;
-        color: #444;
-    }
+.project-card h5 
+{
+    padding: 10px 0;
+    color: #444;
+}
 
-/* Footer styling */
-.footer {
+.footer
+{
     background-color: #282c34;
     color: #ffffff;
     text-align: center;
     padding: 10px;
 }
 
-/* --- New styles for About Page --- */
-
-/* Centering and formatting the main section */
-.begin {
+.begin 
+{
     text-align: center;
     padding-top: 20px;
 }
 
-.page-title {
+.page-title 
+{
     font-family: 'Mate', serif;
     color: #333;
     font-size: 36px;
     margin-top: 20px;
 }
 
-.button {
+.button 
+{
     display: inline-block;
     margin: 5px 10px;
     padding: 10px 15px;
@@ -114,17 +123,19 @@ body {
     transition: background-color 0.3s;
 }
 
-    .button a {
-        color: white;
-        text-decoration: none;
-    }
+.button a 
+{
+    color: white;
+    text-decoration: none;
+}
 
-    .button:hover {
-        background-color: #21a1f1;
-    }
+.button:hover 
+{
+    background-color: #21a1f1;
+}
 
-/* Profile section styling */
-.kern {
+.kern 
+{
     padding: 20px;
     max-width: 800px;
     margin: auto;
@@ -133,28 +144,32 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.glow {
+.glow 
+{
     font-size: 28px;
     font-weight: bold;
     color: #282c34;
     text-align: center;
 }
 
-.content-section {
+.content-section
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
 }
 
-.profile-pic {
+.profile-pic 
+{
     width: 150px;
     border-radius: 50%;
     margin-top: 15px;
     border: 5px solid #61dafb;
 }
 
-.about-text {
+.about-text 
+{
     margin: 15px;
     text-align: center;
     font-family: 'Mate', serif;
@@ -162,18 +177,20 @@ body {
     color: #444;
 }
 
-hr {
+hr 
+{
     width: 50%;
     border: 1px solid #61dafb;
     margin: 20px auto;
 }
 
-/* Scroll buttons */
-.button.top-link, .button.bottom-link {
+.button.top-link, .button.bottom-link 
+{
     background-color: #444;
     color: white;
 }
 
-    .button.top-link:hover, .button.bottom-link:hover {
-        background-color: #282c34;
-    }
+.button.top-link:hover, .button.bottom-link:hover 
+{
+    background-color: #282c34;
+}
