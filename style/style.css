@@ -1,7 +1,7 @@
 ﻿/*@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Mate:ital@0;1&display=swap');*/
 
 body {
-    font-family:'04b 30';
+    font-family: 'Fjalla One', sans-serif;
     margin: 0;
     color: #333;
     background-color: #f0f0f0;
@@ -20,12 +20,11 @@ h2 {
 }
 
 h3 {
-    color: black;
-    -webkit-text-stroke: 0.1px white;
+    color: white;
 }
 
 h4{
-    color: black;
+    color: white;
 }
 
 .section-header 
