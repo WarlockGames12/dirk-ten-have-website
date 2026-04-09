@@ -49,7 +49,10 @@
         </div>
     </section>
     <footer class="footer">
-        <h3>&copy; 2026 Dirk ten Have | All rights reserved</h3>
+        <h3>&copy; <span id="year"></span> Dirk ten Have | All rights reserved</h3>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
