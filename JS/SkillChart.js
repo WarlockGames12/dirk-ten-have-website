@@ -6,7 +6,7 @@ const skills = [
     { label: 'Godot',        grade: 'B' },
     { label: 'HTML / CSS',   grade: 'C' },
     { label: 'SQL',          grade: 'C' },
-    { label: 'PHP',          grade: 'E' },
+    { label: 'PHP',          grade: 'D' },
     { label: 'JavaScript',   grade: 'C' },
     { label: 'MonoGame',     grade: 'C' },
     { label: 'C++',          grade: 'D' },
@@ -14,10 +14,10 @@ const skills = [
     { label: 'Python',       grade: 'E' },
     { label: 'Java',         grade: 'E' },
     { label: '2D Art',       grade: 'C' },
-    { label: '3D Art',       grade: 'E' },
+    { label: '3D Art',       grade: 'D' },
     { label: 'Music',        grade: 'C' },
     { label: 'Multiplayer',  grade: 'C' },
-    { label: 'GIT',          grade: 'C' },
+    { label: 'GIT',          grade: 'C' }
 ];
  
 
