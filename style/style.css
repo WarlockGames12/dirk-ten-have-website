@@ -235,17 +235,17 @@ canvas#radarChart
 .skill-table td 
 {
     padding: 8px 12px;
-    color: #ffffff;
+    color: white
 }
 
 .skill-table thead 
 {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid white;
 }
 
 .skill-table tbody tr 
 {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid white;
 }
 
 .skill-table tbody tr:last-child 
