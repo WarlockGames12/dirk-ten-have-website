@@ -221,3 +221,34 @@ canvas#radarChart
     max-width: 500px;
     width: 100%;
 }
+
+.skill-table
+{
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+.skill-table th,
+.skill-table td 
+{
+    padding: 8px 12px;
+    color: #ffffff;
+}
+
+.skill-table thead 
+{
+    border-bottom: 2px solid #ffffff;
+}
+
+.skill-table tbody tr 
+{
+    border-bottom: 1px solid #ddd;
+}
+
+.skill-table tbody tr:last-child 
+{
+    border-bottom: none;
+}

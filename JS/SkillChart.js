@@ -13,10 +13,11 @@ const skills = [
     { label: 'TypeScript',   grade: 'D' },
     { label: 'Python',       grade: 'E' },
     { label: 'Java',         grade: 'E' },
-    { label: 'Art',          grade: 'C' },
-    { label: 'Music',        grade: 'D' },
+    { label: '2D Art',       grade: 'C' },
+    { label: '3D Art',       grade: 'E' },
+    { label: 'Music',        grade: 'C' },
     { label: 'Multiplayer',  grade: 'C' },
-    { label: 'GIT',          grade: 'B' },
+    { label: 'GIT',          grade: 'C' },
 ];
  
 
