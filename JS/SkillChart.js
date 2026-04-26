@@ -4,7 +4,7 @@ const draw = canvas.getContext('2d');
 const skills = [
     { label: 'Unity / C#',   grade: 'B' },
     { label: 'Godot',        grade: 'B' },
-    { label: 'HTML / CSS',   grade: 'C' },
+    { label: 'HTML/CSS',     grade: 'C' },
     { label: 'SQL',          grade: 'C' },
     { label: 'PHP',          grade: 'D' },
     { label: 'JavaScript',   grade: 'C' },
