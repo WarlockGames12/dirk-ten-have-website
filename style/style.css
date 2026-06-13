@@ -92,6 +92,14 @@ h4{
     height: 160px;
     object-fit: cover;
     border-bottom: 2px solid #61dafb;
+    transition: transform 0.2s ease;
+}
+
+.project-card img:hover
+{
+    transform: scale(1.08);
+    transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .project-card h5 
@@ -251,4 +259,15 @@ canvas#radarChart
 .skill-table tbody tr:last-child 
 {
     border-bottom: none;
+}
+
+.zoomable
+{
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.zoomable:hover
+{
+    transform: scale(1.5);
 }
