@@ -25,7 +25,7 @@
         </div>
         <div class="projects-section">
             <div class="center" style="text-align: center; margin: auto; width: 60%; padding: 10px;">
-                <h3>Description:</h3>
+                <h2>Description:</h2>
                 <h4>Play as a copy of Theseus. Run around in a maze, having to defeat the very Minotaur in Tartarus.  Over and over again. The soul of the Minotaur can't rest. All it can do is chase the player and try to outsmart you.</h4>
                 <h4>Navigate the beautifully tiled halls of an ancient labyrinth, where every mosaic corridor could be your last. Manage your stamina wisely, running won't save you forever.</h4>
                 <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
@@ -38,9 +38,35 @@
                 <iframe frameborder="0" src="https://itch.io/embed/4391361?border_width=3&amp;dark=true" width="212" height="171"><a href="https://warlock-games-studios.itch.io/the-tartarus-loop">The Tartarus Loop by Warlock Games Studio, Mitch0745, Ties1709, Foxo</a></iframe>
                 <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
                 <h4>The Enemy behaviour I created within this game, I am quite proud off. Despite the demo version on Itch not having it. Within the Steam Version of the game, after you defeat the boss for the very first time.</h4>
-                <h4>The phases of the boss are interchangeable, meaning that there is no boss fight that feels a tad bit different.</h4>
                 <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
-                <h4>This Game was created for a School project, created by 3 team members (Formerly 4).  We hope you have fun with the game we created. Don't forget to always stay awesome.</h4>
+                <h3>State Machines:</h3>
+                <h4>How I got the State machine was quite simpler then what you might think. I created an main enemy behaviour script where the states are being stored unto a dictionary with the enum pointing to which state is on. A dictionary provides direct lookup from a state identifier to its corresponding state instance, which keeps the state machine independent of a long conditional chain or manually indexed collection.</h4>
+                <img class="zoomable" style="width: 45%; border-radius: 10px;" src="images/dictionary.png">
+                <h4>Those states are constructed with a inherited abstract base state called the EnemyStateBase with the functions of enter, update and exit.</h4>
+                <img class="zoomable" style="width: 45%; border-radius: 10px;" src="images/Abstractclass.png">
+                <h4>With this base, I would be able to create other states which would be able to communicate with each other. But to truly transition with the other states. I created in the Enemy behaviour script an transition to state, which would transition the behaviour of the enemy.</h4>
+                <img class="zoomable" style="width: 45%; border-radius: 10px;" src="images/Transition.png">
+                <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
+                <h3>Phases:</h3>
+                <h4>I created an randomization function of phases. At the first play session. It would just take the first three phases and places them into the list which gets later on used to randomize the phases.</h4>
+                <img class="zoomable" style="width: 45%; border-radius: 10px;" src="images/1stPlaythrough.png">
+                <h4>After the first play session, an randomized pool gets assigned unto the list. Some of the phases are more likely to be placed right in front unto the phases list.</h4>
+                <img class="zoomable" style="width: 45%; border-radius: 10px;" src="images/poolchance.png">
+                <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
+                <h4>The other things I've worked on this project are the following which I don't fully want to go in depth, since that would be too much:</h4>
+                <ul style="text-align: left; display: inline-block; margin: 20px auto; color: white;">
+                    <li>Cutscene Feature</li>
+                    <li>Camera Shake Feature</li>
+                    <li>Enemy Phases 1-6</li>
+                    <li>Steam Achievement Integration</li>
+                    <li>Door interaction and state synchronization</li>
+                    <li>Damage Feedback System</li>
+                    <li>Shader Work</li>
+                    <li>Partial Music Creation</li>
+                    <li>Sound Effect creation</li>
+                </ul>
+                <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
+                <h4>The reason why I actually placed this game unto Steam directly was because I thought it had a lot of potential with the mechanic of this game, which was to change the pool of phases each run after you did your first run. It grants the player room with experimentation. It makes every single boss encounter different, making it repeatable to play.</h4>
                 <div style="height: 1px; background-color: black; width: 100%; margin: 20px auto;"></div>
             </div>
         </div>
