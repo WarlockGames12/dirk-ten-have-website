@@ -17,7 +17,7 @@ const skills = [
     { label: '3D Art',       grade: 'D' },
     { label: 'Music',        grade: 'C' },
     { label: 'Multiplayer',  grade: 'C' },
-    { label: 'GIT',          grade: 'B' }
+    { label: 'GIT',          grade: 'C' }
 ];
  
 
