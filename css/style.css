@@ -882,6 +882,7 @@ h2, h3, h4, h5, p, a
     {
         display: block;
         z-index: 110;
+        margin-left: auto;
     }
 
     .nav-links 
@@ -889,7 +890,7 @@ h2, h3, h4, h5, p, a
         display: none;
         position: absolute;
 
-        top: 78px;
+        top: 100%;
         left: 0;
         width: 100%;
         padding: 25px 5%;

@@ -302,5 +302,23 @@ modal.addEventListener("click", evt =>
 
 lightbox.addEventListener("click", () => lightbox.classList.remove("open"));
 
+const menu_toggle = document.querySelector(".menu-toggle");
+const nav_links = document.querySelector(".nav-links");
+
+menu_toggle.addEventListener("click", () =>
+{
+    const open = nav_links.classList.toggle("active");
+    menu_toggle.setAttribute("aria-expanded", open);
+});
+
+nav_links.querySelectorAll("a").forEach(link =>
+{
+    link.addEventListener("click", () =>
+    {
+        nav_links.classList.remove("active");
+        menu_toggle.setAttribute("aria-expanded", "false");
+    });
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
