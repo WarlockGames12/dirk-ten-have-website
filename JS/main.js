@@ -322,3 +322,6 @@ nav_links.querySelectorAll("a").forEach(link =>
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+alert("main.js loaded");
+window.addEventListener("error", evt => alert(evt.message + " (line " + evt.lineno + ")"));
+
