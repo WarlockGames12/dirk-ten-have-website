@@ -7,6 +7,8 @@
     --muted: #929292;
     --accent: #c4f06a;
     --border: #303030;
+    --background-color: #101010; 
+    --background-image: linear-gradient(to bottom left, #101010,#303030);
 
     --container: 1160px;
     --transition: 0.25s ease;
@@ -52,17 +54,6 @@ button
     font: inherit;
 }
 
-/* These two rules hit every listed element on the whole page, not one section */
-h1, h2, h3, h4, h5
-{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-p, a
-{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .container 
 {
     width: min(90%, var(--container));
@@ -92,11 +83,10 @@ p, a
     top: 0;
     z-index: 100;
 
-    background: rgba(16, 16, 16, 0.92);
+    background-image: url("/img/plate.jpg");
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 
-    background-image: url("../img/Banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,48 +192,57 @@ p, a
     color: var(--accent);
 }
 
-.about-section
+.about-section 
 {
-    padding: 80px 5%;
+    padding: 64px 5% 80px;
 }
 
-.about-content
+.about-heading 
+{
+    margin: 0 0 22px;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: normal;
+}
+
+.about-content 
 {
     display: flex;
     align-items: center;
     gap: 50px;
+    max-width: 1160px;
+    margin-inline: auto;
 }
 
-.about-text
+.about-text 
 {
     flex: 1;
+    min-width: 0;
     text-align: center;
 }
 
 .about-text h5.eyebrow 
 {
-    font-size: 0.72rem;
-    margin-top: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.15em;
+    margin-top: 0;
+    line-height: 1.4;
 }
 
-.about-text p
+.about-text p 
 {
-    margin-top: 20px;
+    max-width: 680px;
+    margin: 12px auto 0;
     font-size: 0.95rem;
-    line-height: 1.8;
-    letter-spacing: normal;
-    font-weight: normal;
+    line-height: 1.65;
     color: var(--muted);
 }
 
-.about-image
+.about-image 
 {
     flex: 0 0 350px;
 }
 
-.about-image img
+.about-image img 
 {
     width: 350px;
     height: 350px;
@@ -252,23 +251,36 @@ p, a
     border: 2px solid white;
 }
 
-.projects-header
+.projects-header,
+.expertise-header,
+.contact-header
 {
-    background-image: url(../img/trustnoone.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 110px;
+    padding: 34px 5%;
 
-    min-height: 120px;
     display: flex;
+    align-items: center;
     justify-content: center;
+
+    background: #050505;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.35), rgba(16, 16, 16, 0.75) 45%, rgba(16, 16, 16, 0.96)),url(../img/plate.jpg);
+    
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
     text-align: center;
 }
 
-.projects-header h4
+.projects-header h4,
+.expertise-header h4,
+.contact-header h4 
 {
+    margin: 0;
     font-size: 2rem;
+    line-height: 1.2;
     letter-spacing: normal;
+    -webkit-text-stroke: 1px #101010;
+    font-weight: 700;
 }
 
 .projects-grid
@@ -306,6 +318,7 @@ p, a
 {
     display: flex;
     flex-direction: column;
+
     flex: 1;
     padding: 22px;
 }
@@ -401,21 +414,6 @@ p, a
     height: 18px;
 
     object-fit: contain;
-}
-
-.expertise-header
-{
-    background: url("../img/banner1.png") center / cover no-repeat;
-    padding: 60px 5%;
-    text-align: center;
-}
-
-.expertise-header h4
-{
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: normal;
-    font-weight: 800;
 }
 
 .language-grid
@@ -638,7 +636,7 @@ p, a
     padding-left: 20px;
     color: var(--muted);
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: inherit;
     font-size: 0.95rem;
 
     line-height: 1.8;
@@ -715,29 +713,6 @@ p, a
     border-radius: 10px;
 }
 
-.contact-header
-{
-    background-image: url(../img/uvg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 120px;
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.contact-header h4
-{
-    margin: 0;
-    font-size: 2rem;
-
-    letter-spacing: normal;
-    font-weight: 800;
-}
 
 .contact-intro
 {
