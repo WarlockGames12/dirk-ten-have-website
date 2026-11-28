@@ -83,7 +83,6 @@ button
     top: 0;
     z-index: 100;
 
-    background-image: url("/img/plate.jpg");
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 
